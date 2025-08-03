@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetWhisk - Cakes & Desserts</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/lottie-web@5.7.6/build/player/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="cupcake-animation" style="width: 200px; height: 200px; margin: auto;"></div>
+        <h1>🍰 SweetWhisk</h1>
+        <p>Craving Something Sweet?</p>
+        <div class="cta-buttons">
+            <button id="viewBtn">View Products</button>
+            <button id="orderBtn">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products" id="products">
+        <h2>Our Specials</h2>
+        <div class="product-list">
+            <!-- Cake -->
+            <div class="product-card">
+                <img src="cake.jpg" alt="Chocolate Cake">
+                <h3>Cakes</h3>
+                <p>Fluffy, rich, and full of love 🎂</p>
+            </div>
+
+            <!-- Cupcake & Muffin -->
+            <div class="product-card">
+                <img src="cupcake.jpg" alt="Cupcakes">
+                <h3>Cupcakes & Muffins</h3>
+                <p>Sweet bites of joy 🧁</p>
+            </div>
+
+            <!-- Halwa -->
+            <div class="product-card">
+                <img src="halwa.jpg" alt="Halwa">
+                <h3>Halwa</h3>
+                <p>Warm, melt in mouth magic ✨</p>
+            </div>
+
+            <!-- Brownie -->
+            <div class="product-card">
+                <img src="brownie.jpg" alt="Brownies">
+                <h3>Chocolate Brownies</h3>
+                <p>Choco loaded & fudgy 🍫</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order" id="order">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="product" placeholder="Product Name" required>
+            <input type="text" name="quantity" placeholder=" Quantity in kg/g/box" required>
+            <input type="date" name="date"  required>
+            <textarea name="message" placeholder="Any Special Instructions"></textarea>
+            <button type="submit">Send via WhatsApp</button>
+        </form>
+    </section>
+</body>
+</html>
